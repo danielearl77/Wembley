@@ -14,7 +14,7 @@ class ByTubeViewController: UIViewController {
     @IBOutlet weak var byTubeAdView: GADBannerView!
     
     override func viewDidLoad() {
-        byTubeAdView.adUnitID = "ca-app-pub-1798485712270431/7806134308"
+        byTubeAdView.adUnitID = "ca-app-pub-xxx/xxx"
         byTubeAdView.rootViewController = self
         byTubeAdView.load(GADRequest())
         super.viewDidLoad()
