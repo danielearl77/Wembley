@@ -14,7 +14,7 @@ class FoodDrinkViewController: UIViewController {
     @IBOutlet weak var foodAdView: GADBannerView!
     
     override func viewDidLoad() {
-        foodAdView.adUnitID = "ca-app-pub-1798485712270431/7806134308"
+        foodAdView.adUnitID = "ca-app-pub-xxx/xxx"
         foodAdView.rootViewController = self
         foodAdView.load(GADRequest())
         super.viewDidLoad()
