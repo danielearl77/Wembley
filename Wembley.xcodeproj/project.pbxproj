@@ -21,18 +21,7 @@
 		52C29A6521E669A6005AE6AE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C29A6421E669A6005AE6AE /* CoreLocation.framework */; };
 		52C29A6721E669B7005AE6AE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C29A6621E669B7005AE6AE /* MapKit.framework */; };
 		52C29A6921E669CB005AE6AE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C29A6821E669CB005AE6AE /* WebKit.framework */; };
-		52C29A6B21E67380005AE6AE /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C29A6A21E67380005AE6AE /* GoogleMobileAds.framework */; };
-		52C29A7921E674F9005AE6AE /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C29A6E21E674F8005AE6AE /* EventKit.framework */; };
-		52C29A7A21E674F9005AE6AE /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C29A6F21E674F9005AE6AE /* EventKitUI.framework */; };
-		52C29A7B21E674F9005AE6AE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C29A7021E674F9005AE6AE /* CoreMedia.framework */; };
-		52C29A7C21E674F9005AE6AE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C29A7121E674F9005AE6AE /* SystemConfiguration.framework */; };
-		52C29A7D21E674F9005AE6AE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C29A7221E674F9005AE6AE /* AVFoundation.framework */; };
-		52C29A7E21E674F9005AE6AE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C29A7321E674F9005AE6AE /* CoreTelephony.framework */; };
-		52C29A7F21E674F9005AE6AE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C29A7421E674F9005AE6AE /* MessageUI.framework */; };
 		52C29A8021E674F9005AE6AE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C29A7521E674F9005AE6AE /* StoreKit.framework */; };
-		52C29A8121E674F9005AE6AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C29A7621E674F9005AE6AE /* CoreGraphics.framework */; };
-		52C29A8221E674F9005AE6AE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C29A7721E674F9005AE6AE /* AdSupport.framework */; };
-		52C29A8321E674F9005AE6AE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C29A7821E674F9005AE6AE /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,18 +41,7 @@
 		52C29A6421E669A6005AE6AE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		52C29A6621E669B7005AE6AE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		52C29A6821E669CB005AE6AE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		52C29A6A21E67380005AE6AE /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		52C29A6E21E674F8005AE6AE /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
-		52C29A6F21E674F9005AE6AE /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
-		52C29A7021E674F9005AE6AE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		52C29A7121E674F9005AE6AE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		52C29A7221E674F9005AE6AE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		52C29A7321E674F9005AE6AE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		52C29A7421E674F9005AE6AE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		52C29A7521E674F9005AE6AE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		52C29A7621E674F9005AE6AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		52C29A7721E674F9005AE6AE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		52C29A7821E674F9005AE6AE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,20 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52C29A7921E674F9005AE6AE /* EventKit.framework in Frameworks */,
-				52C29A7A21E674F9005AE6AE /* EventKitUI.framework in Frameworks */,
-				52C29A7B21E674F9005AE6AE /* CoreMedia.framework in Frameworks */,
-				52C29A7C21E674F9005AE6AE /* SystemConfiguration.framework in Frameworks */,
-				52C29A7D21E674F9005AE6AE /* AVFoundation.framework in Frameworks */,
-				52C29A7E21E674F9005AE6AE /* CoreTelephony.framework in Frameworks */,
-				52C29A7F21E674F9005AE6AE /* MessageUI.framework in Frameworks */,
 				52C29A8021E674F9005AE6AE /* StoreKit.framework in Frameworks */,
-				52C29A8121E674F9005AE6AE /* CoreGraphics.framework in Frameworks */,
-				52C29A8221E674F9005AE6AE /* AdSupport.framework in Frameworks */,
-				52C29A8321E674F9005AE6AE /* AudioToolbox.framework in Frameworks */,
 				52C29A6921E669CB005AE6AE /* WebKit.framework in Frameworks */,
 				52C29A6721E669B7005AE6AE /* MapKit.framework in Frameworks */,
-				52C29A6B21E67380005AE6AE /* GoogleMobileAds.framework in Frameworks */,
 				52C29A6521E669A6005AE6AE /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,7 +79,6 @@
 		144DF1FC21E2408B001D27FE /* Wembley */ = {
 			isa = PBXGroup;
 			children = (
-				52C29A6A21E67380005AE6AE /* GoogleMobileAds.framework */,
 				144DF1FD21E2408B001D27FE /* AppDelegate.swift */,
 				144DF1FF21E2408B001D27FE /* ViewController.swift */,
 				144DF20121E2408B001D27FE /* Main.storyboard */,
@@ -132,17 +98,7 @@
 		52C29A6321E669A5005AE6AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				52C29A7721E674F9005AE6AE /* AdSupport.framework */,
-				52C29A7821E674F9005AE6AE /* AudioToolbox.framework */,
-				52C29A7221E674F9005AE6AE /* AVFoundation.framework */,
-				52C29A7621E674F9005AE6AE /* CoreGraphics.framework */,
-				52C29A7021E674F9005AE6AE /* CoreMedia.framework */,
-				52C29A7321E674F9005AE6AE /* CoreTelephony.framework */,
-				52C29A6E21E674F8005AE6AE /* EventKit.framework */,
-				52C29A6F21E674F9005AE6AE /* EventKitUI.framework */,
-				52C29A7421E674F9005AE6AE /* MessageUI.framework */,
 				52C29A7521E674F9005AE6AE /* StoreKit.framework */,
-				52C29A7121E674F9005AE6AE /* SystemConfiguration.framework */,
 				52C29A6821E669CB005AE6AE /* WebKit.framework */,
 				52C29A6621E669B7005AE6AE /* MapKit.framework */,
 				52C29A6421E669A6005AE6AE /* CoreLocation.framework */,
