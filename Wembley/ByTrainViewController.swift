@@ -7,16 +7,13 @@
 //
 
 import UIKit
-import GoogleMobileAds
+
 
 class ByTrainViewController: UIViewController {
 
-    @IBOutlet weak var byTrainAdView: GADBannerView!
+ 
     
     override func viewDidLoad() {
-        byTrainAdView.adUnitID = "ca-app-pub-xxx/xxx"
-        byTrainAdView.rootViewController = self
-        byTrainAdView.load(GADRequest())
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }

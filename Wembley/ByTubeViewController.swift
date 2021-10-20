@@ -7,16 +7,13 @@
 //
 
 import UIKit
-import GoogleMobileAds
+
 
 class ByTubeViewController: UIViewController {
 
-    @IBOutlet weak var byTubeAdView: GADBannerView!
+   
     
     override func viewDidLoad() {
-        byTubeAdView.adUnitID = "ca-app-pub-xxx/xxx"
-        byTubeAdView.rootViewController = self
-        byTubeAdView.load(GADRequest())
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
