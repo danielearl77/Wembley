@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,29 +13,53 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImg" translatesAutoresizingMaskIntoConstraints="NO" id="Dv5-pl-WVe">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="44" width="428" height="882"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1y-O9-SLv">
+                                <rect key="frame" x="0.0" y="44" width="428" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wembley Stadium Guide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ih-67-Ug9">
+                                        <rect key="frame" x="76" y="11" width="276.33333333333331" height="28"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="4sE-Ti-X5R"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="9ih-67-Ug9" firstAttribute="centerY" secondItem="j1y-O9-SLv" secondAttribute="centerY" id="8O3-VP-sLZ"/>
+                                    <constraint firstItem="9ih-67-Ug9" firstAttribute="centerX" secondItem="j1y-O9-SLv" secondAttribute="centerX" id="ZR7-yl-3ZO"/>
+                                    <constraint firstAttribute="height" constant="50" id="d3z-Wl-owX"/>
+                                </constraints>
+                            </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Dv5-pl-WVe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0p7-r2-slp"/>
-                            <constraint firstItem="Dv5-pl-WVe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="VIT-3q-03L"/>
-                            <constraint firstItem="Dv5-pl-WVe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wab-Rf-1xH"/>
-                            <constraint firstItem="Dv5-pl-WVe" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ehE-I7-HRi"/>
+                            <constraint firstItem="j1y-O9-SLv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4u7-95-KcX"/>
+                            <constraint firstItem="j1y-O9-SLv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9nH-qH-W7E"/>
+                            <constraint firstAttribute="bottom" secondItem="Dv5-pl-WVe" secondAttribute="bottom" id="KAU-0t-pzQ"/>
+                            <constraint firstItem="Dv5-pl-WVe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Sqy-JA-eJB"/>
+                            <constraint firstItem="Dv5-pl-WVe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="owc-CW-Duj"/>
+                            <constraint firstItem="Dv5-pl-WVe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="q6I-Mp-SMZ"/>
+                            <constraint firstItem="j1y-O9-SLv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qWF-Qs-dn6"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="51.86915887850467" y="374.51403887688986"/>
         </scene>
     </scenes>
     <resources>
         <image name="BackgroundImg" width="1242" height="2688"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
