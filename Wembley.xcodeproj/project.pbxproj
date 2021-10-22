@@ -12,6 +12,10 @@
 		144DF20321E2408B001D27FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144DF20121E2408B001D27FE /* Main.storyboard */; };
 		144DF20521E24096001D27FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 144DF20421E24096001D27FE /* Assets.xcassets */; };
 		144DF20821E24097001D27FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144DF20621E24097001D27FE /* LaunchScreen.storyboard */; };
+		14CEEBC427231B220058365D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEEBC327231B220058365D /* AboutViewController.swift */; };
+		14CEEBC627231B380058365D /* SupportUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEEBC527231B380058365D /* SupportUsViewController.swift */; };
+		14CEEBC827231B460058365D /* LiveTrainsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEEBC727231B460058365D /* LiveTrainsViewController.swift */; };
+		14CEEBCA27231B500058365D /* LiveTubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CEEBC927231B500058365D /* LiveTubeViewController.swift */; };
 		52C29A5821E6675B005AE6AE /* ByRoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C29A5721E6675B005AE6AE /* ByRoadViewController.swift */; };
 		52C29A5A21E66770005AE6AE /* ByTrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C29A5921E66770005AE6AE /* ByTrainViewController.swift */; };
 		52C29A5C21E66783005AE6AE /* ByTubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C29A5B21E66783005AE6AE /* ByTubeViewController.swift */; };
@@ -32,6 +36,10 @@
 		144DF20421E24096001D27FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		144DF20721E24097001D27FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		144DF20921E24097001D27FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14CEEBC327231B220058365D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		14CEEBC527231B380058365D /* SupportUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportUsViewController.swift; sourceTree = "<group>"; };
+		14CEEBC727231B460058365D /* LiveTrainsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTrainsViewController.swift; sourceTree = "<group>"; };
+		14CEEBC927231B500058365D /* LiveTubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTubeViewController.swift; sourceTree = "<group>"; };
 		52C29A5721E6675B005AE6AE /* ByRoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByRoadViewController.swift; sourceTree = "<group>"; };
 		52C29A5921E66770005AE6AE /* ByTrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByTrainViewController.swift; sourceTree = "<group>"; };
 		52C29A5B21E66783005AE6AE /* ByTubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByTubeViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +90,10 @@
 				144DF1FD21E2408B001D27FE /* AppDelegate.swift */,
 				144DF1FF21E2408B001D27FE /* ViewController.swift */,
 				144DF20121E2408B001D27FE /* Main.storyboard */,
+				14CEEBC927231B500058365D /* LiveTubeViewController.swift */,
+				14CEEBC727231B460058365D /* LiveTrainsViewController.swift */,
+				14CEEBC527231B380058365D /* SupportUsViewController.swift */,
+				14CEEBC327231B220058365D /* AboutViewController.swift */,
 				52C29A6121E667BF005AE6AE /* FoodDrinkViewController.swift */,
 				52C29A5F21E667B1005AE6AE /* StadiumInfoViewController.swift */,
 				52C29A5D21E66799005AE6AE /* MapViewController.swift */,
@@ -180,7 +192,11 @@
 			files = (
 				144DF20021E2408B001D27FE /* ViewController.swift in Sources */,
 				52C29A5E21E66799005AE6AE /* MapViewController.swift in Sources */,
+				14CEEBC827231B460058365D /* LiveTrainsViewController.swift in Sources */,
+				14CEEBC627231B380058365D /* SupportUsViewController.swift in Sources */,
 				52C29A5821E6675B005AE6AE /* ByRoadViewController.swift in Sources */,
+				14CEEBC427231B220058365D /* AboutViewController.swift in Sources */,
+				14CEEBCA27231B500058365D /* LiveTubeViewController.swift in Sources */,
 				52C29A5C21E66783005AE6AE /* ByTubeViewController.swift in Sources */,
 				52C29A5A21E66770005AE6AE /* ByTrainViewController.swift in Sources */,
 				52C29A6021E667B1005AE6AE /* StadiumInfoViewController.swift in Sources */,

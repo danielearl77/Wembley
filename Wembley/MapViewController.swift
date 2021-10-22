@@ -31,4 +31,8 @@ class MapViewController: UIViewController {
         self.locMan.requestWhenInUseAuthorization()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func backBtn(_ sender: Any) {
+    }
+    
 }

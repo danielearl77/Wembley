@@ -281,6 +281,9 @@
                                             <imageReference key="image" image="chevron.backward.square" catalog="system" symbolScale="large" renderingMode="template"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="backBtn:" destination="tyG-fp-m45" eventType="touchUpInside" id="nxl-7x-T5I"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="PZ5-A5-4si"/>
@@ -362,8 +365,12 @@ From Wembley Central Station, exit and turn right onto Wembley High Road.  Walk 
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sUL-xz-3Bd"/>
+                    <connections>
+                        <segue destination="Qhh-9j-ewF" kind="unwind" identifier="backToHome" unwindAction="navBackToHome:" id="efk-82-QDt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bkq-CB-KFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Qhh-9j-ewF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1986.448598130841" y="-600"/>
         </scene>
@@ -426,6 +433,9 @@ From Wembley Central Station, exit and turn right onto Wembley High Road.  Walk 
                                             <imageReference key="image" image="chevron.backward.square" catalog="system" symbolScale="large" renderingMode="template"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="backBtn:" destination="IFr-22-vGL" eventType="touchUpInside" id="6ha-4J-4Ui"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="8DC-uS-sex"/>
@@ -461,9 +471,11 @@ From Wembley Central Station, exit and turn right onto Wembley High Road.  Walk 
                         <outlet property="errorText" destination="gXj-tI-6rD" id="pQJ-Lt-xsc"/>
                         <outlet property="errorView" destination="TxO-fW-rqn" id="JtI-Pj-HJW"/>
                         <outlet property="loadingSpinner" destination="C9s-Ds-aE0" id="6IL-sa-hGP"/>
+                        <segue destination="zeC-dJ-S0L" kind="unwind" identifier="backToHome" unwindAction="navBackToHome:" id="Xpi-pC-1Hh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y6c-Xg-tjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zeC-dJ-S0L" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1073.8317757009345" y="884.44924406047528"/>
         </scene>
@@ -499,6 +511,9 @@ From Wembley Central Station, exit and turn right onto Wembley High Road.  Walk 
                                             <imageReference key="image" image="chevron.backward.square" catalog="system" symbolScale="large" renderingMode="template"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="backBtn:" destination="Lwd-ne-jwe" eventType="touchUpInside" id="cwN-ag-1zt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="9el-bF-CYy"/>
@@ -527,9 +542,11 @@ From Wembley Central Station, exit and turn right onto Wembley High Road.  Walk 
                     <navigationItem key="navigationItem" id="PsW-go-leS"/>
                     <connections>
                         <outlet property="stadLocMap" destination="ojo-vN-54M" id="BcN-8f-tUQ"/>
+                        <segue destination="MW8-J8-cJ6" kind="unwind" identifier="backToHome" unwindAction="navBackToHome:" id="wxS-vZ-JuV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24w-ZU-dgf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="MW8-J8-cJ6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1987.8504672897195" y="132.82937365010801"/>
         </scene>
@@ -562,6 +579,9 @@ From Wembley Central Station, exit and turn right onto Wembley High Road.  Walk 
                                             <imageReference key="image" image="chevron.backward.square" catalog="system" symbolScale="large" renderingMode="template"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="backBtn:" destination="iQj-VF-c0a" eventType="touchUpInside" id="VM1-dR-KBq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="P9Q-nE-QtF"/>
@@ -597,8 +617,12 @@ Wembley High Road has plenty of fast food outlets, if taking the train or tube t
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="E8O-VH-q8Q"/>
+                    <connections>
+                        <segue destination="ShM-fJ-5bk" kind="unwind" identifier="backToHome" unwindAction="navBackToHome:" id="yBm-Qn-g5T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Em1-gn-xJ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ShM-fJ-5bk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1987.8504672897195" y="883.80129589632838"/>
         </scene>
@@ -631,6 +655,9 @@ Wembley High Road has plenty of fast food outlets, if taking the train or tube t
                                             <imageReference key="image" image="chevron.backward.square" catalog="system" symbolScale="large" renderingMode="template"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="backBtn:" destination="fYo-1m-q1L" eventType="touchUpInside" id="Cf8-dO-9qk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="GJ3-Ik-Q8J"/>
@@ -706,8 +733,12 @@ Wembley High Road has plenty of fast food outlets, if taking the train or tube t
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XhE-c3-Lhw"/>
+                    <connections>
+                        <segue destination="ImV-tk-kUj" kind="unwind" identifier="backToHome" unwindAction="navBackToHome:" id="f0g-D4-kec"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fO9-Ck-cJy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ImV-tk-kUj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1072.5" y="-600"/>
         </scene>
@@ -740,6 +771,9 @@ Wembley High Road has plenty of fast food outlets, if taking the train or tube t
                                             <imageReference key="image" image="chevron.backward.square" catalog="system" symbolScale="large" renderingMode="template"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="backBtn:" destination="gPT-DW-9vH" eventType="touchUpInside" id="foc-Jv-XNu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="xrQ-vI-dWp"/>
@@ -779,15 +813,19 @@ From the North head into London on the M1 and then head west on the A406 (North 
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DQR-Tu-rKu"/>
+                    <connections>
+                        <segue destination="Lb8-3y-7Xh" kind="unwind" identifier="backToHome" unwindAction="navBackToHome:" id="OHD-MG-jyz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Yg-Og-aUw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Lb8-3y-7Xh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2822" y="-599"/>
         </scene>
-        <!--View Controller-->
+        <!--Support Us View Controller-->
         <scene sceneID="rjc-g4-7J1">
             <objects>
-                <viewController id="3bk-p4-9vg" sceneMemberID="viewController">
+                <viewController id="3bk-p4-9vg" customClass="SupportUsViewController" customModule="Wembley" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6HY-vf-aaN">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -813,6 +851,9 @@ From the North head into London on the M1 and then head west on the A406 (North 
                                             <imageReference key="image" image="chevron.backward.square" catalog="system" symbolScale="large" renderingMode="template"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="backBtn:" destination="3bk-p4-9vg" eventType="touchUpInside" id="kgD-R7-hlX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="cIM-vE-JcP"/>
@@ -894,10 +935,10 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
             </objects>
             <point key="canvasLocation" x="129" y="-1392"/>
         </scene>
-        <!--View Controller-->
+        <!--Live Trains View Controller-->
         <scene sceneID="jge-hS-G7N">
             <objects>
-                <viewController id="bBt-i4-zuq" sceneMemberID="viewController">
+                <viewController id="bBt-i4-zuq" customClass="LiveTrainsViewController" customModule="Wembley" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LA1-Kt-vgR">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -923,6 +964,9 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
                                             <imageReference key="image" image="chevron.backward.square" catalog="system" symbolScale="large" renderingMode="template"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="backBtn:" destination="bBt-i4-zuq" eventType="touchUpInside" id="iTe-7k-afG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="pQs-k9-XpK"/>
@@ -975,10 +1019,10 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
             </objects>
             <point key="canvasLocation" x="1073.8317757009345" y="-1392.44060475162"/>
         </scene>
-        <!--View Controller-->
+        <!--Live Tube View Controller-->
         <scene sceneID="DkE-EF-c0T">
             <objects>
-                <viewController id="YjG-Z5-YdZ" sceneMemberID="viewController">
+                <viewController id="YjG-Z5-YdZ" customClass="LiveTubeViewController" customModule="Wembley" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="arQ-U8-thx">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1004,6 +1048,9 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
                                             <imageReference key="image" image="chevron.backward.square" catalog="system" symbolScale="large" renderingMode="template"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="backBtn:" destination="YjG-Z5-YdZ" eventType="touchUpInside" id="KYB-Sg-ugU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="qY7-KM-Ii6"/>
@@ -1059,7 +1106,7 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
         <!--About-->
         <scene sceneID="UtN-KO-lgq">
             <objects>
-                <viewController title="About" id="owG-nX-2Vx" sceneMemberID="viewController">
+                <viewController title="About" id="owG-nX-2Vx" customClass="AboutViewController" customModule="Wembley" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mtP-rL-JtK">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1085,6 +1132,9 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
                                             <imageReference key="image" image="chevron.backward.square" catalog="system" symbolScale="large" renderingMode="template"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="backBtn:" destination="owG-nX-2Vx" eventType="touchUpInside" id="uPL-Ef-UCS"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="w9p-CO-aGL"/>
@@ -1141,8 +1191,12 @@ For more information visit www.phone-app.co.uk
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="89N-T8-Som"/>
+                    <connections>
+                        <segue destination="6dQ-Ey-p60" kind="unwind" identifier="backToHome" unwindAction="navBackToHome:" id="ZDl-Qd-A5C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1tb-Yo-yL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="6dQ-Ey-p60" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="128.97196261682242" y="-599.35205183585322"/>
         </scene>
