@@ -930,8 +930,12 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oH1-v6-K9L"/>
+                    <connections>
+                        <segue destination="gfc-wu-iXb" kind="unwind" identifier="backToAbout" unwindAction="navBackToAbout:" id="Lqe-ld-fdJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SQv-6X-ca5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="gfc-wu-iXb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="129" y="-1392"/>
         </scene>
@@ -1014,8 +1018,12 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="grv-Aq-G2s"/>
+                    <connections>
+                        <segue destination="7IT-DM-hOk" kind="unwind" identifier="backToTrain" unwindAction="navBackToTrain:" id="zG6-0A-65A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHi-Uz-0Ga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="7IT-DM-hOk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1073.8317757009345" y="-1392.44060475162"/>
         </scene>
@@ -1098,8 +1106,12 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ugC-hs-z2N"/>
+                    <connections>
+                        <segue destination="Tca-Ui-UJK" kind="unwind" identifier="backToTube" unwindAction="navBackToTube:" id="crW-yy-bcm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ytc-a2-sd1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Tca-Ui-UJK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1985" y="-1392"/>
         </scene>

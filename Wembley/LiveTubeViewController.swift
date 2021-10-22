@@ -19,6 +19,7 @@ class LiveTubeViewController: UIViewController {
 
     // MARK: - Navigation
      @IBAction func backBtn(_ sender: Any) {
+         performSegue(withIdentifier: "backToTube", sender: self)
      }
      
 }

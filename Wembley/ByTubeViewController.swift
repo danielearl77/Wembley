@@ -18,7 +18,12 @@ class ByTubeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func navBackToTube( _ seg: UIStoryboardSegue) {
+        NSLog("Unwind")
+    }
+    
     @IBAction func backBtn(_ sender: Any) {
+        performSegue(withIdentifier: "backToHome", sender: self)
     }
     
 }

@@ -18,5 +18,6 @@ class LiveTrainsViewController: UIViewController {
     
     // MARK: - Navigation
      @IBAction func backBtn(_ sender: Any) {
+         performSegue(withIdentifier: "backToTrain", sender: self)
      }
 }

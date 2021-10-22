@@ -50,6 +50,7 @@ class StadiumInfoViewController: UIViewController, WKUIDelegate, WKNavigationDel
     }
     
     @IBAction func backBtn(_ sender: Any) {
+        performSegue(withIdentifier: "backToHome", sender: self)
     }
     
     

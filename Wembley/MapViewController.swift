@@ -33,6 +33,7 @@ class MapViewController: UIViewController {
     }
     
     @IBAction func backBtn(_ sender: Any) {
+        performSegue(withIdentifier: "backToHome", sender: self)
     }
     
 }

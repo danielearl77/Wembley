@@ -19,6 +19,7 @@ class FoodDrinkViewController: UIViewController {
     }
     
     @IBAction func backBtn(_ sender: Any) {
+        performSegue(withIdentifier: "backToHome", sender: self)
     }
     
 }

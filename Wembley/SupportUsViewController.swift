@@ -19,5 +19,6 @@ class SupportUsViewController: UIViewController {
 
     // MARK: - Navigation
      @IBAction func backBtn(_ sender: Any) {
+         performSegue(withIdentifier: "backToAbout", sender: self)
      }
 }
