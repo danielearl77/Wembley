@@ -908,18 +908,35 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8g-ZQ-Kft">
+                                <rect key="frame" x="0.0" y="94" width="428" height="798"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Tic-XV-d1p">
+                                        <rect key="frame" x="195.66666666666666" y="380.66666666666669" width="37" height="37"/>
+                                        <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Tic-XV-d1p" firstAttribute="centerX" secondItem="i8g-ZQ-Kft" secondAttribute="centerX" id="6By-MR-ttC"/>
+                                    <constraint firstItem="Tic-XV-d1p" firstAttribute="centerY" secondItem="i8g-ZQ-Kft" secondAttribute="centerY" id="Yvr-pd-VBy"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5H8-3l-tN3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="W9I-Mb-hEB" firstAttribute="centerX" secondItem="6HY-vf-aaN" secondAttribute="centerX" id="2Ql-Pa-sQ8"/>
+                            <constraint firstItem="i8g-ZQ-Kft" firstAttribute="leading" secondItem="5H8-3l-tN3" secondAttribute="leading" id="8fG-oY-NLC"/>
                             <constraint firstItem="W9I-Mb-hEB" firstAttribute="leading" secondItem="5H8-3l-tN3" secondAttribute="leading" constant="20" id="Cdy-7y-a1p"/>
                             <constraint firstItem="U56-TG-W19" firstAttribute="centerX" secondItem="6HY-vf-aaN" secondAttribute="centerX" id="FAR-SK-WQy"/>
                             <constraint firstItem="29F-qy-ru1" firstAttribute="centerX" secondItem="6HY-vf-aaN" secondAttribute="centerX" id="FPS-3J-lBt"/>
                             <constraint firstItem="W9I-Mb-hEB" firstAttribute="top" secondItem="3VG-kD-ZFg" secondAttribute="bottom" id="RIe-5t-ozY"/>
                             <constraint firstItem="3VG-kD-ZFg" firstAttribute="top" secondItem="5H8-3l-tN3" secondAttribute="top" id="T62-uK-QKL"/>
+                            <constraint firstItem="i8g-ZQ-Kft" firstAttribute="trailing" secondItem="5H8-3l-tN3" secondAttribute="trailing" id="VjH-Oc-5es"/>
                             <constraint firstItem="rRA-89-49k" firstAttribute="centerX" secondItem="6HY-vf-aaN" secondAttribute="centerX" id="XIC-3b-TbG"/>
                             <constraint firstItem="X7h-D7-8cu" firstAttribute="centerX" secondItem="6HY-vf-aaN" secondAttribute="centerX" id="Zkv-jT-1zw"/>
+                            <constraint firstItem="i8g-ZQ-Kft" firstAttribute="bottom" secondItem="5H8-3l-tN3" secondAttribute="bottom" id="cxw-2A-k0R"/>
                             <constraint firstItem="5H8-3l-tN3" firstAttribute="trailing" secondItem="W9I-Mb-hEB" secondAttribute="trailing" constant="20" id="jL5-gA-jka"/>
                             <constraint firstItem="rRA-89-49k" firstAttribute="top" secondItem="X7h-D7-8cu" secondAttribute="bottom" constant="10" id="jgo-lL-BWJ"/>
                             <constraint firstItem="U56-TG-W19" firstAttribute="top" secondItem="rRA-89-49k" secondAttribute="bottom" constant="20" id="jlu-7N-TWy"/>
@@ -927,15 +944,37 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
                             <constraint firstItem="29F-qy-ru1" firstAttribute="top" secondItem="W9I-Mb-hEB" secondAttribute="bottom" constant="10" id="sFf-Ef-CgA"/>
                             <constraint firstItem="3VG-kD-ZFg" firstAttribute="leading" secondItem="6HY-vf-aaN" secondAttribute="leading" id="sOS-vg-UkN"/>
                             <constraint firstItem="X7h-D7-8cu" firstAttribute="top" secondItem="29F-qy-ru1" secondAttribute="bottom" constant="10" id="tMs-Px-NMj"/>
+                            <constraint firstItem="i8g-ZQ-Kft" firstAttribute="top" secondItem="3VG-kD-ZFg" secondAttribute="bottom" id="xBO-bA-IgX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oH1-v6-K9L"/>
                     <connections>
+                        <outlet property="IAPLoadingView" destination="i8g-ZQ-Kft" id="lew-s0-whq"/>
+                        <outlet property="ProductDetail" destination="X7h-D7-8cu" id="1nf-lA-aFw"/>
+                        <outlet property="ProductPrice" destination="rRA-89-49k" id="PxK-ZB-rw9"/>
+                        <outlet property="ProductPurchaseBtn" destination="U56-TG-W19" id="WWJ-vh-Kw4"/>
+                        <outlet property="ProductTitle" destination="29F-qy-ru1" id="mUg-PO-zi3"/>
                         <segue destination="gfc-wu-iXb" kind="unwind" identifier="backToAbout" unwindAction="navBackToAbout:" id="Lqe-ld-fdJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SQv-6X-ca5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="gfc-wu-iXb" userLabel="Exit" sceneMemberID="exit"/>
+                <view contentMode="scaleToFill" id="9qN-vO-ttz">
+                    <rect key="frame" x="0.0" y="0.0" width="428" height="798"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="06s-Ja-u5L">
+                            <rect key="frame" x="195.66666666666666" y="380.66666666666669" width="37" height="37"/>
+                            <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="stQ-vG-Q1J"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="06s-Ja-u5L" firstAttribute="centerX" secondItem="9qN-vO-ttz" secondAttribute="centerX" id="Eat-PQ-n7n"/>
+                        <constraint firstItem="06s-Ja-u5L" firstAttribute="centerY" secondItem="9qN-vO-ttz" secondAttribute="centerY" id="ddP-Mg-WqO"/>
+                    </constraints>
+                </view>
             </objects>
             <point key="canvasLocation" x="129" y="-1392"/>
         </scene>

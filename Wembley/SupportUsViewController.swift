@@ -10,6 +10,12 @@ import UIKit
 
 class SupportUsViewController: UIViewController {
 
+    @IBOutlet weak var ProductTitle: UILabel!
+    @IBOutlet weak var ProductDetail: UILabel!
+    @IBOutlet weak var ProductPrice: UILabel!
+    @IBOutlet weak var ProductPurchaseBtn: UIButton!
+    @IBOutlet weak var IAPLoadingView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
