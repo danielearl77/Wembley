@@ -15,15 +15,13 @@ class LiveTubeViewController: UIViewController, WKUIDelegate, WKNavigationDelega
     @IBOutlet weak var errorView: UIView!
     @IBOutlet weak var errorText: UILabel!
     @IBOutlet weak var loadingSpinner: UILabel!
-    
-    
-    
+    @IBOutlet weak var browserBackBtn: UIButton!
     
     var tubestation = ""
     
     func loadStationData() {
         errorText.text = "Loading..."
-        var stationURL = "http://m.nationalrail.co.uk/pj/ldbboard/dep/"
+        var stationURL = "https://tfl.gov.uk/tube/stop/940GZZLUWYP/wembley-park-underground-station/?Input="
         stationURL.append(tubestation)
         let myURL = URL(string: stationURL)
         let myRequest = URLRequest(url: myURL!)
@@ -57,15 +55,11 @@ class LiveTubeViewController: UIViewController, WKUIDelegate, WKNavigationDelega
     
 
     // MARK: - Navigation
+    @IBAction func browserBack(_ sender: Any) {
+    }
+    
+    
      @IBAction func backBtn(_ sender: Any) {
          performSegue(withIdentifier: "backToTube", sender: self)
      }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       super.prepare(for: segue, sender: sender)
-        
-        
-        
-    }
-     
 }

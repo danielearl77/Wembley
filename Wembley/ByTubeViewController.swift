@@ -30,10 +30,10 @@ class ByTubeViewController: UIViewController {
         switch(segue.identifier ?? "") {
             case "tubeCentral":
                 let sendStation = segue.destination as? LiveTubeViewController
-                sendStation?.tubestation = "WMB"
+                sendStation?.tubestation = "Wembley+Central"
             case "tubePark":
                 let sendStation = segue.destination as? LiveTubeViewController
-                sendStation?.tubestation = "WCX"
+                sendStation?.tubestation = "Wembley+Park+Underground+Station"
         case "backToHome":
                 NSLog("Unwind")
             default:

@@ -15,6 +15,7 @@ class LiveTrainsViewController: UIViewController, WKUIDelegate, WKNavigationDele
     @IBOutlet weak var errorView: UIView!
     @IBOutlet weak var errorText: UILabel!
     @IBOutlet weak var loadingSpinner: UIActivityIndicatorView!
+    @IBOutlet weak var browserBackBtn: UIButton!
     
     var station = ""
     
@@ -54,6 +55,10 @@ class LiveTrainsViewController: UIViewController, WKUIDelegate, WKNavigationDele
     
     
     // MARK: - Navigation
+    @IBAction func browserBack(_ sender: Any) {
+    }
+    
+    
      @IBAction func backBtn(_ sender: Any) {
          performSegue(withIdentifier: "backToTrain", sender: self)
      }

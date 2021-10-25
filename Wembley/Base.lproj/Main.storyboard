@@ -1040,6 +1040,9 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
                                 <buttonConfiguration key="configuration" style="gray" title="BACK" cornerStyle="capsule">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="browserBack:" destination="bBt-i4-zuq" eventType="touchUpInside" id="Gc7-uD-315"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72Z-Pn-MYK">
                                 <rect key="frame" x="0.0" y="94" width="428" height="728"/>
@@ -1085,6 +1088,7 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
                     <navigationItem key="navigationItem" id="grv-Aq-G2s"/>
                     <connections>
                         <outlet property="WebView" destination="qdv-RU-VN1" id="wqg-Hy-eDm"/>
+                        <outlet property="browserBackBtn" destination="fRe-pH-q1N" id="3Bg-ZJ-Eov"/>
                         <outlet property="errorText" destination="lUn-qS-Q22" id="Mbm-TH-Mek"/>
                         <outlet property="errorView" destination="72Z-Pn-MYK" id="dgE-7P-a8r"/>
                         <outlet property="loadingSpinner" destination="i9d-3t-vJ3" id="ltI-uY-55N"/>
@@ -1150,6 +1154,9 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
                                 <buttonConfiguration key="configuration" style="gray" title="BACK" cornerStyle="capsule">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="browserBack:" destination="YjG-Z5-YdZ" eventType="touchUpInside" id="W4j-Nd-GW8"/>
+                                </connections>
                             </button>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vuG-8f-knU">
                                 <rect key="frame" x="0.0" y="94" width="428" height="728"/>
@@ -1203,6 +1210,7 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
                     <navigationItem key="navigationItem" id="ugC-hs-z2N"/>
                     <connections>
                         <outlet property="WebView" destination="vuG-8f-knU" id="Qa9-6B-ZaA"/>
+                        <outlet property="browserBackBtn" destination="6F6-s2-dCx" id="LF5-97-2sU"/>
                         <outlet property="errorText" destination="rps-sP-OiP" id="Wbk-kr-EHR"/>
                         <outlet property="errorView" destination="jeW-ms-eb9" id="Psp-Hm-BkR"/>
                         <outlet property="loadingSpinner" destination="rps-sP-OiP" id="Xvv-2F-nkx"/>

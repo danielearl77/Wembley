@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		143C6D71272691DE00BDE542 /* ProductIds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 143C6D70272691DE00BDE542 /* ProductIds.plist */; };
 		144DF1FE21E2408B001D27FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144DF1FD21E2408B001D27FE /* AppDelegate.swift */; };
 		144DF20021E2408B001D27FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144DF1FF21E2408B001D27FE /* ViewController.swift */; };
 		144DF20321E2408B001D27FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144DF20121E2408B001D27FE /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		143C6D70272691DE00BDE542 /* ProductIds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProductIds.plist; sourceTree = "<group>"; };
 		144DF1FA21E2408B001D27FE /* Wembley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wembley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		144DF1FD21E2408B001D27FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		144DF1FF21E2408B001D27FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				1463864E2724667B009747C3 /* IAPManager.swift */,
 				14CEEBC727231B460058365D /* LiveTrainsViewController.swift */,
 				14CEEBC527231B380058365D /* SupportUsViewController.swift */,
+				143C6D70272691DE00BDE542 /* ProductIds.plist */,
 				14CEEBC327231B220058365D /* AboutViewController.swift */,
 				52C29A6121E667BF005AE6AE /* FoodDrinkViewController.swift */,
 				52C29A5F21E667B1005AE6AE /* StadiumInfoViewController.swift */,
@@ -183,6 +186,7 @@
 				144DF20821E24097001D27FE /* LaunchScreen.storyboard in Resources */,
 				144DF20521E24096001D27FE /* Assets.xcassets in Resources */,
 				144DF20321E2408B001D27FE /* Main.storyboard in Resources */,
+				143C6D71272691DE00BDE542 /* ProductIds.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
