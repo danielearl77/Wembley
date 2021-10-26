@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+/*
+ *  WEB BROWSER BACK BUTTONS
+ *  WEB BROWSER LOADING AND ERROR MSGs
+ *  IAP TESTING
+ *  FULL IPHONE TEST
+ *  FULL IPAD TEST
+ *  REMOVE PRINT AND NSLOG
+ */
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

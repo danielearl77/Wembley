@@ -22,17 +22,30 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1y-O9-SLv">
                                 <rect key="frame" x="0.0" y="44" width="428" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wembley Stadium Guide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ih-67-Ug9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wembley Stadium Guide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="9ih-67-Ug9">
                                         <rect key="frame" x="76" y="11" width="276.33333333333331" height="28"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvH-AQ-jIL">
+                                        <rect key="frame" x="388" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="Ixw-Us-blf"/>
+                                            <constraint firstAttribute="height" constant="30" id="Lht-O0-C6S"/>
+                                        </constraints>
+                                        <buttonConfiguration key="configuration" style="plain" image="aboutIcon">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                        </buttonConfiguration>
+                                    </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="4sE-Ti-X5R"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="9ih-67-Ug9" firstAttribute="centerY" secondItem="j1y-O9-SLv" secondAttribute="centerY" id="8O3-VP-sLZ"/>
+                                    <constraint firstItem="4sE-Ti-X5R" firstAttribute="trailing" secondItem="QvH-AQ-jIL" secondAttribute="trailing" constant="10" id="P5C-vu-khS"/>
+                                    <constraint firstItem="QvH-AQ-jIL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9ih-67-Ug9" secondAttribute="trailing" constant="10" id="PGy-ST-6lP"/>
+                                    <constraint firstItem="QvH-AQ-jIL" firstAttribute="centerY" secondItem="j1y-O9-SLv" secondAttribute="centerY" id="ULU-Tk-4kn"/>
                                     <constraint firstItem="9ih-67-Ug9" firstAttribute="centerX" secondItem="j1y-O9-SLv" secondAttribute="centerX" id="ZR7-yl-3ZO"/>
                                     <constraint firstAttribute="height" constant="50" id="d3z-Wl-owX"/>
                                 </constraints>
@@ -58,6 +71,7 @@
     </scenes>
     <resources>
         <image name="BackgroundImg" width="1242" height="2688"/>
+        <image name="aboutIcon" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

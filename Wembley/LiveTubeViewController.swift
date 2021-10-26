@@ -21,8 +21,9 @@ class LiveTubeViewController: UIViewController, WKUIDelegate, WKNavigationDelega
     
     func loadStationData() {
         errorText.text = "Loading..."
-        var stationURL = "https://tfl.gov.uk/tube/stop/940GZZLUWYP/wembley-park-underground-station/?Input="
-        stationURL.append(tubestation)
+        let stationURL = tubestation
+        print(stationURL)
+        //stationURL.append(tubestation)
         let myURL = URL(string: stationURL)
         let myRequest = URLRequest(url: myURL!)
         WebView.load(myRequest)
