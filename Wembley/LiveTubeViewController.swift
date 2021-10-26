@@ -14,13 +14,13 @@ class LiveTubeViewController: UIViewController, WKUIDelegate, WKNavigationDelega
     @IBOutlet weak var WebView: WKWebView!
     @IBOutlet weak var errorView: UIView!
     @IBOutlet weak var errorText: UILabel!
-    @IBOutlet weak var loadingSpinner: UILabel!
+    @IBOutlet weak var loadingSpinner: UIActivityIndicatorView!
     @IBOutlet weak var browserBackBtn: UIButton!
     
     var tubestation = ""
     
     func loadStationData() {
-        errorText.text = "Loading..."
+        errorText.isHidden = true
         let stationURL = tubestation
         print(stationURL)
         //stationURL.append(tubestation)
@@ -38,27 +38,38 @@ class LiveTubeViewController: UIViewController, WKUIDelegate, WKNavigationDelega
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         errorView.isHidden = true
+        let allowBack = webView.canGoBack
+        if allowBack == true {
+            browserBackBtn.isEnabled = true
+            browserBackBtn.isHidden = false
+        } else {
+            browserBackBtn.isEnabled = false
+            browserBackBtn.isHidden = true
+        }
     }
     
     func webView(_ webView: WKWebView,
                  didFailProvisionalNavigation navigation: WKNavigation!,
                  withError error: Error) {
+        print("LOAD ERROR")
         errorText.text = "Error Loading Page"
+        errorText.isHidden = false
         loadingSpinner.isHidden = true
     }
     
     func webView(_ webView: WKWebView,
                  didFail navigation: WKNavigation!,
                  withError error: Error) {
+        print("LOAD ERROR")
         errorText.text = "Error Loading Page"
+        errorText.isHidden = false
         loadingSpinner.isHidden = true
     }
     
-
     // MARK: - Navigation
     @IBAction func browserBack(_ sender: Any) {
+        WebView.goBack()
     }
-    
     
      @IBAction func backBtn(_ sender: Any) {
          performSegue(withIdentifier: "backToTube", sender: self)

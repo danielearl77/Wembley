@@ -20,7 +20,7 @@ class LiveTrainsViewController: UIViewController, WKUIDelegate, WKNavigationDele
     var station = ""
     
     func loadStationData() {
-        errorText.text = "Loading..."
+        errorText.isHidden = true
         var stationURL = "http://m.nationalrail.co.uk/pj/ldbboard/dep/"
         stationURL.append(station)
         let myURL = URL(string: stationURL)
@@ -37,12 +37,21 @@ class LiveTrainsViewController: UIViewController, WKUIDelegate, WKNavigationDele
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         errorView.isHidden = true
+        let allowBack = webView.canGoBack
+        if allowBack == true {
+            browserBackBtn.isEnabled = true
+            browserBackBtn.isHidden = false
+        } else {
+            browserBackBtn.isEnabled = false
+            browserBackBtn.isHidden = true
+        }
     }
     
     func webView(_ webView: WKWebView,
                  didFailProvisionalNavigation navigation: WKNavigation!,
                  withError error: Error) {
         errorText.text = "Error Loading Page"
+        errorText.isHidden = false
         loadingSpinner.isHidden = true
     }
     
@@ -50,14 +59,14 @@ class LiveTrainsViewController: UIViewController, WKUIDelegate, WKNavigationDele
                  didFail navigation: WKNavigation!,
                  withError error: Error) {
         errorText.text = "Error Loading Page"
+        errorText.isHidden = false
         loadingSpinner.isHidden = true
     }
     
-    
     // MARK: - Navigation
     @IBAction func browserBack(_ sender: Any) {
+        WebView.goBack()
     }
-    
     
      @IBAction func backBtn(_ sender: Any) {
          performSegue(withIdentifier: "backToTrain", sender: self)

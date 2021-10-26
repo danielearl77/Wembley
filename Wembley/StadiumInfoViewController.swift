@@ -17,7 +17,7 @@ class StadiumInfoViewController: UIViewController, WKUIDelegate, WKNavigationDel
     @IBOutlet weak var loadingSpinner: UIActivityIndicatorView!
     
     func loadStadiumInfo() {
-        errorText.text = "Loading..."
+        errorText.isHidden = true
         let fixturesURL = "http://en.wikipedia.org/wiki/Wembley_stadium"
         let myURL = URL(string: fixturesURL)
         let myRequest = URLRequest(url: myURL!)
@@ -39,6 +39,7 @@ class StadiumInfoViewController: UIViewController, WKUIDelegate, WKNavigationDel
                  didFailProvisionalNavigation navigation: WKNavigation!,
                  withError error: Error) {
         errorText.text = "Error Loading Page"
+        errorText.isHidden = false
         loadingSpinner.isHidden = true
     }
     
@@ -46,6 +47,7 @@ class StadiumInfoViewController: UIViewController, WKUIDelegate, WKNavigationDel
                  didFail navigation: WKNavigation!,
                  withError error: Error) {
         errorText.text = "Error Loading Page"
+        errorText.isHidden = false
         loadingSpinner.isHidden = true
     }
     

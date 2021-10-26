@@ -11,8 +11,6 @@ import UIKit
 class ViewController: UIViewController {
 
 /*
- *  WEB BROWSER BACK BUTTONS
- *  WEB BROWSER LOADING AND ERROR MSGs
  *  IAP TESTING
  *  FULL IPHONE TEST
  *  FULL IPAD TEST
