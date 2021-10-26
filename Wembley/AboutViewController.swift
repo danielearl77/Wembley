@@ -18,7 +18,7 @@ class AboutViewController: UIViewController {
     
     // MARK: - Navigation
     @IBAction func navBackToAbout( _ seg: UIStoryboardSegue) {
-        NSLog("Unwind")
+        //NSLog("Unwind")
     }
     
      @IBAction func backBtn(_ sender: Any) {

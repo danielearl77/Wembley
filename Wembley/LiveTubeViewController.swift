@@ -22,8 +22,6 @@ class LiveTubeViewController: UIViewController, WKUIDelegate, WKNavigationDelega
     func loadStationData() {
         errorText.isHidden = true
         let stationURL = tubestation
-        print(stationURL)
-        //stationURL.append(tubestation)
         let myURL = URL(string: stationURL)
         let myRequest = URLRequest(url: myURL!)
         WebView.load(myRequest)
@@ -51,7 +49,6 @@ class LiveTubeViewController: UIViewController, WKUIDelegate, WKNavigationDelega
     func webView(_ webView: WKWebView,
                  didFailProvisionalNavigation navigation: WKNavigation!,
                  withError error: Error) {
-        print("LOAD ERROR")
         errorText.text = "Error Loading Page"
         errorText.isHidden = false
         loadingSpinner.isHidden = true
@@ -60,7 +57,6 @@ class LiveTubeViewController: UIViewController, WKUIDelegate, WKNavigationDelega
     func webView(_ webView: WKWebView,
                  didFail navigation: WKNavigation!,
                  withError error: Error) {
-        print("LOAD ERROR")
         errorText.text = "Error Loading Page"
         errorText.isHidden = false
         loadingSpinner.isHidden = true

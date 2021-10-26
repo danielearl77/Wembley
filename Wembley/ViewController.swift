@@ -14,7 +14,6 @@ class ViewController: UIViewController {
  *  IAP TESTING
  *  FULL IPHONE TEST
  *  FULL IPAD TEST
- *  REMOVE PRINT AND NSLOG
  */
     
     
@@ -25,7 +24,7 @@ class ViewController: UIViewController {
     
     // MARK: - Navigation
     @IBAction func navBackToHome( _ seg: UIStoryboardSegue) {
-        NSLog("Unwind")
+        //NSLog("Unwind")
     }
 }
 

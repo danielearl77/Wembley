@@ -18,7 +18,7 @@ class ByTrainViewController: UIViewController {
     
     // MARK: - Navigation
     @IBAction func navBackToTrain( _ seg: UIStoryboardSegue) {
-        NSLog("Unwind")
+        //NSLog("Unwind")
     }
     
     @IBAction func backBtn(_ sender: Any) {

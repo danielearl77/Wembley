@@ -900,6 +900,9 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Send Tip"/>
+                                <connections>
+                                    <action selector="purchaseTip:" destination="3bk-p4-9vg" eventType="touchUpInside" id="aTC-up-TNL"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRA-89-49k">
                                 <rect key="frame" x="163" y="390.5" width="88" height="17"/>

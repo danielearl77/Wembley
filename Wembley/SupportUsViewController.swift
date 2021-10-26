@@ -46,6 +46,10 @@ class SupportUsViewController: UIViewController {
     }
     
     // MARK: - In App Purchase
+    
+    
+    
+    
     @IBAction func purchaseTip(_ sender: Any) {
         if !self.purchase(product: products[0]) {
             let alertMsg = "WARNING: In App Purchases not allowed on this device."
