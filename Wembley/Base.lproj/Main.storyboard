@@ -794,13 +794,13 @@ Wembley High Road has plenty of fast food outlets, if taking the train or tube t
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="rbz-ZB-2X4">
                                 <rect key="frame" x="20" y="94" width="374" height="758"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Wembley Stadium is now a 'public transport' venue.  As a result there is no official parking for non-vip fans at the ground.  However, plenty of industrial premises in the area of the stadium offer event parking.  Wembley Stadium is well signposted from the M25.
+                                <mutableString key="text">Wembley Stadium is now a 'public transport' venue.  As a result, there is no official parking for non-VIP fans at the ground.  However, plenty of industrial premises in the area of the stadium offer event parking.  Wembley Stadium is well signposted from the M25.
 
 From the East / South East head into London on the M11, A12, or A13 and then head west on the A406 (North Circular).
 
 From the West / South West head into London on the M4 or M40 and then head east on the A406 (North Circular).
 
-From the North head into London on the M1 and then head west on the A406 (North Circular).  Wembley is then well signposted (and visible) from the A406 (North Circular).</string>
+From the North head into London on the M1 and then head west on the A406 (North Circular).  Wembley is then well signposted (and visible) from the A406 (North Circular).</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1289,15 +1289,6 @@ Please note this is just a digital tip no extra functionality will be unlocked, 
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="D2S-Cf-2Cc">
                                 <rect key="frame" x="20" y="174" width="374" height="668"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">This app aims to provide travel information for fans travelling to events at Wembley Stadium.
-    
-All directions given in this app are taken from either maps or personal experience.  Please contact us if you think the directions are wrong, can provide clearer routes to the stadium, or have a recommendation for the food and drink section.  we are also happy to include your business so please get in touch.
-
-This app is not affiliated with Wembley Stadium or the Football Association, and neither has provided any information for this app.  Stadium Infomation is linked from the www.wikipedia.org website. 
- 
-For more information visit www.phone-app.co.uk
-
-©2012-2019. Version 5.0</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -1319,6 +1310,7 @@ For more information visit www.phone-app.co.uk
                     </view>
                     <navigationItem key="navigationItem" id="89N-T8-Som"/>
                     <connections>
+                        <outlet property="aboutTextBox" destination="D2S-Cf-2Cc" id="K5K-OP-Kn1"/>
                         <segue destination="6dQ-Ey-p60" kind="unwind" identifier="backToHome" unwindAction="navBackToHome:" id="ZDl-Qd-A5C"/>
                     </connections>
                 </viewController>

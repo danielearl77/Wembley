@@ -9,13 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-/*
- *  IAP TESTING
- *  FULL IPHONE TEST
- *  FULL IPAD TEST
- */
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
